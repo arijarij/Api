@@ -2,7 +2,7 @@ const grpc = require('@grpc/grpc-js');
 const protoLoader = require('@grpc/proto-loader');
 require('dotenv').config()
 const mongoose = require('mongoose')
-const Freelancers = require('./game')
+const Freelancers = require('./models/game')
 mongoose.connect(process.env.URI).then(() => console.log('db connected'))
 const gameProtoPath = 'game.proto';
 const gameProtoDefinition = protoLoader.loadSync(gameProtoPath, {
