@@ -1,0 +1,57 @@
+syntax = "proto3";
+package game;
+
+// Définition du message game
+message Game {
+    string id = 1;
+    string name = 2;
+    string description = 3;
+}
+
+// Définition des messages de requête et de réponse pour les méthodes d
+message GetGameRequest {
+    string game_id = 1;
+}
+message deleteGameRequest {
+    string game_id = 1;
+}
+
+message GetGameResponse {
+    Game game = 1;
+}
+message updateGameResponse {
+    Game game = 1;
+}
+message deleteGameResponse {
+    string deleted = 1;
+}
+
+message SearchGamesRequest {
+    string query = 1;
+}
+message updateGameRequest {
+    string id = 1;
+    string name = 2;
+    string description = 3;
+}
+message SearchGamesResponse {
+    repeated Game games = 1;
+}
+
+message CreateGameRequest {
+  string name = 1;
+  string description = 2;
+}
+
+message CreateGameResponse {
+  Game game = 1;
+}
+
+// Définition du service de films
+service GameService {
+    rpc GetGame(GetGameRequest) returns (GetGameResponse);
+    rpc SearchGames(SearchGamesRequest) returns (SearchGamesResponse);
+    rpc CreateGame(CreateGameRequest) returns (CreateGameResponse);
+    rpc deleteGame(deleteGameRequest) returns (deleteGameResponse);
+    rpc updateGame(updateGameRequest) returns (updateGameResponse);
+}

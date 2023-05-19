@@ -1,0 +1,45 @@
+syntax = "proto3";
+package player;
+
+// Définition du message TV show
+message Player {
+    string id = 1;
+    string nom = 2;
+    string prenom = 3;
+    string age = 4;
+// Ajouter d'autres champs de données pour les séries TV au besoin
+}
+
+// Définition des messages de requête et de réponse pour les méthodes
+message GetPlayerRequest {
+    string player_id = 1;
+}
+
+message GetPlayerResponse {
+    Player player = 1;
+}
+
+message SearchPlayersRequest {
+    string query = 1;
+}
+
+message SearchPlayersResponse {
+    repeated Player players = 1;
+}
+
+message CreatePlayerRequest {
+  string nom = 1;
+  string prenom = 2;
+  string age = 3;
+}
+
+message CreatePlayerResponse {
+  Player player = 1;
+}
+
+// Définition du service de séries TV
+service PlayerService {
+    rpc GetPlayer(GetPlayerRequest) returns (GetPlayerResponse);
+    rpc SearchPlayers(SearchPlayersRequest) returns (SearchPlayersResponse);
+    rpc CreatePlayer(CreatePlayerRequest) returns (CreatePlayerResponse);
+}
