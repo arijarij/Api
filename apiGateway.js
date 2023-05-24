@@ -79,7 +79,8 @@ app.post('/updategame/:id', (req, res) => {
         if (err) {
             res.status(500).send(err);
         } else {
-            res.json(response.game);
+            
+            res.json({'id':id,"name":response.game.name,"description":response.game.description});
         }
     });
 });
@@ -96,7 +97,7 @@ app.get('/games/:id', (req, res) => {
         }
     });
 });
-app.get('/deletegames/:id', (req, res) => {
+app.delete('/deletegames/:id', (req, res) => {
     const client = new gameProto.GameService('localhost:5000',
         grpc.credentials.createInsecure());
     const id = req.params.id;

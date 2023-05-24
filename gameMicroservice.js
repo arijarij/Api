@@ -78,6 +78,7 @@ const gameService = {
         const _id= new mongoose.Types.ObjectId(id)
         try {
             const game = await Freelancers.findOne({"_id":_id})
+            
             game.name=name ;
             game.description=description;
             await game.save();

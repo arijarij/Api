@@ -47,11 +47,9 @@ const playerService = {
         }
     },
     createPlayer: (call, callback) => {
-        console.log(call.request);
         const { nom, prenom, age } = call.request;
         try {
             const x = new Player({  nom, prenom, age  })
-            console.log(x);
             x.save().then((test) => {
                 console.log(test);
                 const player = {"id":test._id,"nom":test.nom,"prenom":test.prenom,"age":test.age}
