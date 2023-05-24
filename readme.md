@@ -21,7 +21,7 @@ Create Game
 get Games
 ![image](./assets/Get.PNG)
 get Game by id
-![image](./assets/getid.PNG)
+![image](./assets/Getid.PNG)
 update Game 
 ![image](./assets/Update.PNG)
 delete Game 
