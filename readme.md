@@ -17,4 +17,4 @@ node apiGateway.js
  Express JS , GrapheQL , grpc , Rest , MongoDB 
 ### Game 
 Create Game
-![image](./assets/Ajout.jpg)
+![image](./assets/Ajout.PNG)
