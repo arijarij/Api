@@ -20,7 +20,7 @@ Create Game
 ![image](./assets/Ajout.PNG)
 get Games
 ![image](./assets/Get.PNG)
-get Game by id
+get Game by id  
 ![image](./assets/Getid.PNG)
 update Game 
 ![image](./assets/Update.PNG)
