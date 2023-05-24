@@ -17,12 +17,19 @@ node apiGateway.js
  Express JS , GrapheQL , grpc , Rest , MongoDB 
 ### Game 
 - Create Game
-![image](./assets/Ajout.PNG)
+![image](./assets/Game/Ajout.PNG)
 - get Games
-![image](./assets/Get.PNG)
+![image](./assets/Game/Get.PNG)
 - get Game by id  
-![image](./assets/Getid.PNG)
+![image](./assets/Game/Getid.PNG)
 - update Game 
-![image](./assets/Update.PNG)
+![image](./assets/Game/Update.PNG)
 - delete Game 
-![image](./assets/Delete.PNG)
+![image](./assets/Game/Delete.PNG)
+### player 
+- Create Player
+![image](./assets/Player/Ajout.PNG)
+- get Players
+![image](./assets/Player/Get.PNG)
+- get Player by id  
+![image](./assets/Player/Getid.PNG)
