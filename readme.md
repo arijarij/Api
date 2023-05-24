@@ -15,7 +15,7 @@ node apiGateway.js
 ```
 ## technologies
  Express JS , GrapheQL , grpc , Rest , MongoDB 
-### Game 
+## Game 
 - Create Game
 ![image](./assets/Game/Ajout.PNG)
 - get Games
@@ -26,7 +26,7 @@ node apiGateway.js
 ![image](./assets/Game/Update.PNG)
 - delete Game 
 ![image](./assets/Game/Delete.PNG)
-### player 
+## player 
 - Create Player
 ![image](./assets/Player/Ajout.PNG)
 - get Players
