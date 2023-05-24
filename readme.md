@@ -33,3 +33,5 @@ node apiGateway.js
 ![image](./assets/Player/Get.PNG)
 - get Player by id  
 ![image](./assets/Player/Getid.PNG)
+## RQ
+Creer fichier .env dans le dossier root et ajouter votre `URI` DataBase MongoDB
