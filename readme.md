@@ -18,3 +18,11 @@ node apiGateway.js
 ### Game 
 Create Game
 ![image](./assets/Ajout.PNG)
+get Games
+![image](./assets/Get.PNG)
+get Game by id
+![image](./assets/getid.PNG)
+update Game by id
+![image](./assets/Update.PNG)
+delete Game by id
+![image](./assets/Delte.PNG)
