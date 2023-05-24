@@ -22,7 +22,7 @@ get Games
 ![image](./assets/Get.PNG)
 get Game by id
 ![image](./assets/getid.PNG)
-update Game by id
+update Game 
 ![image](./assets/Update.PNG)
-delete Game by id
-![image](./assets/Delte.PNG)
+delete Game 
+![image](./assets/Delete.PNG)
